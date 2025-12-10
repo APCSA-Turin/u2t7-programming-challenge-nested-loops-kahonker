@@ -55,6 +55,7 @@ public class NestedLoops {
     *****
           */
     public static String emptyBox(int width, int height) {
+        if (width <= 1 || height <= 1) return "";
         String returnString = "";
         for (int i = 1; i <= height; i++){
             if (i == 1 || i == height) {
